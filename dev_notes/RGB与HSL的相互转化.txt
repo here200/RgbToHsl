@@ -1,0 +1,36 @@
+1. 验证RGB与HSL的相互转化公式是否正确
+	测试样例：
+		rgb(255, 255, 0)   --> rgb(1, 1, 0)
+		hsl(60°, 100%, 50%)
+		#ffff00
+
+		rgb(80, 243, 135)
+		hsl(140.25°, 87.17%, 63.33%)
+		#50f387
+
+		rgb(99, 143, 156)
+		hsl(193.68°, 22.35%, 50%)
+		#638f9c
+
+2. 设计API
+
+	struct Rgb {
+	    double red;
+	    double green;
+	    double blue;
+	};
+
+	struct Hsl {
+	    double hue; // 色相
+	    double saturation; // 饱和度
+	    double lightness; // 亮度
+	};
+
+	void convertRgb(struct Rgb *rgb);
+	void convertHsl(struct Hsl *hsl);
+	void rgbToHsl(struct Hsl *hsl, const struct Rgb *rgb);
+	void hslToRgb(struct Rgb *rgb, const struct Hsl *hsl);
+	// 输出函数
+	void outputRgb(const struct Rgb *rgb);
+	void outputHsl(const struct Hsl *hsl);
+	void outputHex(const struct Rgb *rgb);
