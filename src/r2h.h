@@ -1,9 +1,6 @@
 #ifndef RGB_R2H_H
 #define RGB_R2H_H
 
-#include <stdio.h>
-#include <stdlib.h>
-
 struct Rgb {
     double red;
     double green;
