@@ -1,4 +1,4 @@
-#include "r2h.h"
+#include "common/r2h.h"
 
 int main() {
     struct Rgb rgb1 = {99, 143, 156};
@@ -16,4 +16,3 @@ int main() {
 
     return 0;
 }
-
