@@ -30,6 +30,7 @@
 	void convertHsl(struct Hsl *hsl);
 	void rgbToHsl(struct Hsl *hsl, const struct Rgb *rgb);
 	void hslToRgb(struct Rgb *rgb, const struct Hsl *hsl);
+	
 	// 输出函数
 	void outputRgb(const struct Rgb *rgb);
 	void outputHsl(const struct Hsl *hsl);
